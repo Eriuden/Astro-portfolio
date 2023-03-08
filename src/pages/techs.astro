@@ -1,0 +1,233 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+import ImagesJs from "../Img/Javascript_badge.png";
+import ImagesReact from "../Img/react-1.webp";
+import ImagesNode from "../Img/Node.js_logo.svg.png";
+import ImagesSymfony from "../Img/symfony_black_02.png";
+import ImagesMongo from "../Img/mongodb-logo.png";
+import ImagesMySQL from "../Img/kisspng-mysql-workbench-database-mysql-cluster-5b7cdc87c3dd20.3638601015349095758023.jpg";
+import ImagesTailwind from "../Img/tailwindcss.png";
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="A propos | Antoine Carrette" description="Les langages que j'utilise" />
+		<style>
+			
+
+			.aPropos {
+				text-align: center
+			}
+
+			.heroImg img {
+				width: 100%;
+				height:100%;
+			}
+
+			.Images {
+                max-width: 15%;
+                max-height: 15%;
+            }
+
+            .JS {
+                margin-top: 5rem;
+                font-family: "King";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .React {
+                margin-top: 5rem;
+                font-family: "King";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Tailwind {
+                margin-top: 5rem;
+                font-family: "King";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Node {
+                margin-top: 5rem;
+                font-family: "King";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Symfony {
+                margin-top: 5rem;
+                font-family: "King";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .MySQL {
+                margin-top: 5rem;
+                font-family: "King";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .MongoDB {
+                margin-top: 5rem;
+                font-family: "King";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .photo-profil {
+                max-width: 15%;
+                max-height: 15%;
+                border-radius: 50%;
+
+                margin-bottom: 2%;
+            }
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+
+
+            .techs {
+                margin-top: 2rem;
+                margin-bottom: 20rem;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1 class="aPropos">Stack technique</h1>
+			
+			<div class="techs">
+                
+          
+                <div class="JS">
+                  <img class="Images" src={ImagesJs} alt="JS" />
+                  <p class="techsP">
+                    C'est le premier vrai langage auquel je me suis frotté, c'est en
+                    partie pour ça que j'ai vite décidé de me spécialiser dans celui ci au
+                    lieu de me disperser et me perdre. Je l'utilise encore en brut de
+                    temps en temps pour développer des petits jeux et programmes.
+                  </p>
+                </div>
+          
+                <div class="React">
+                  <img class="Images" src={ImagesReact} alt="React" />
+          
+                  <p class="techsP">
+                    {" "}
+                    La librairie (et non framework contrairement à la croyance populaire)
+                    de JS sur laquelle j'ai décide de me spécialiser, pour plusieurs
+                    raisons, déjà, la seconde formation que j'ai éffectué, très axée JS,
+                    mettait le focus sur cette tech, deuxièmement, je sait qu'elle est
+                    très utilisée en entreprise, cherchant un CDI, elle me semblait un
+                    choix judicieux.
+                  </p>
+          
+                  <p class="techsP">
+                    Aussi, elle est pensée pour fonctionner en symbiose avec Node, ce que
+                    j'ai pu tester et confirmer, elle serait aussi utilisée en combinaison
+                    avec le framework PHP Symfony, étant un grand amoureux de celui ci,
+                    j'ai ambition de vérifier ceci par moi-même.
+                  </p>
+                </div>
+          
+                <div class="Tailwind">
+                  <img class="Images" src={ImagesTailwind} alt="Tailwind" />
+                  <p class="techsP">
+                    Un frameword de CSS, tout comme bootstrap, mais je vais être honnête,
+                    dix fois mieux à mes yeux. En effet, si ici aussi il permet de
+                    facilement gérer le responsive, il permet bien plus de libertés quand
+                    au design que Bootstrap, qui je trouve en propose un froid et triste,
+                    là ou tailwind s'est dit qu'il pouvait le gérer et non seulement l'UI.
+                  </p>
+                </div>
+          
+                <div class="Node">
+                  <img class="Images" src={ImagesNode} alt="Node" />
+          
+                  <p class="techsP">
+                    Le fameux environnement back-end de Javascript, où quand l'un des plus
+                    célèbres langage front-end décide de se passer de sa combinaison
+                    historique avec PHP pour gérer le back-end. React a été pensé, comme
+                    cité précédemment, pour être en synergie avec Node, même
+                    l'installation de modules Node lors de la création d'un dossier React
+                    nous le hurle.
+                  </p>
+          
+                  <p class="techsP">
+                    Et en effet, avec l'usage d'Axios, j'ai pu tester l'ensemble et voir
+                    qu'un site complet est réalisable de cette manière.
+                  </p>
+                </div>
+          
+                <div class="MongoDB">
+                  <img class="Images" src={ImagesMongo} alt="MongoDB" />
+          
+                  <p class="techsP">
+                    Découvert alors que je m'entrainais sur un projet en MERN, je ne l'ai
+                    encore que peu utilisé, mais son aspect plus moderne/pratique, vis à
+                    vis de MySQL est assez séduisant, bien que l'installation soit un peu
+                    technique, contrairement à son usage, d'une facilité étonnante.
+                    MondoDB a été pensé, pour Python à la base, mais aussi pour Node,
+                    puisque le module mongoose est celui à utiliser au sein de Node afin
+                    de créer les tables
+                  </p>
+                </div>
+          
+                <div class="MySQL">
+                  <img class="Images" src={ImagesMySQL} alt="MySQL" />
+          
+                  <p class="techsP">
+                    Le système de gestion de base de données avec lequel j'ai commencé le
+                    back-end, avec MongoDB, c'est le principal traitement de BDD, il
+                    marche parfaitement avec Symfony notamment. Si j'ai pris l'habitude de
+                    son usage, je dois reconnaitre aujourd'hui lui préférer MongoDB, me
+                    spécialisant dans la stack MERN, c'était inévitable.
+                  </p>
+                </div>
+          
+                <div class="Symfony">
+                  <img class="Images" src={ImagesSymfony} alt="symfony" />
+          
+                  <p class="techsP">
+                    Avec Laravel, LE framework PHP, si lors de ma première formation, j'ai
+                    beaucoup utilisé PHP, Je n'ai vraiment pas apprécié travailler avec ce
+                    langage, et pourtant, l'utilisation de Symfony fut une révélation pour
+                    moi.
+                  </p>
+          
+                  <p class="techsP">
+                    Avec une bonne utilisation du terminal, Il est aisé de créer des
+                    fonctionnalités complètes, notamment, pour tout ce qui est Système
+                    utilisateur, puisque des options natives de paramètrages et sécurité
+                    vis à vis des comptes utilisateurs existent ici. Lors de mon projet
+                    axé Symfony, il me fut assez simple de concevoir un système sécurisé
+                    et agréable pour l'utilisateur.
+                  </p>
+                </div>
+            </div>
+		</div>
+		<Footer />
+	</body>
+</html>
