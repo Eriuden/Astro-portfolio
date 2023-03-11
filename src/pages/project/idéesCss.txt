@@ -1,0 +1,4 @@
+Possibilité de reproduire le trick 3 de frontEndJoe,
+qui fera que l'image sera en fond, le texte sera sur des bannières blanches
+qui laisseront des interstices  à l'image de fond par le scroll
+ce n'est pas le truc le plus dur, mais il faut veiller au responsive de l'image

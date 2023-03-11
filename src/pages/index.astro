@@ -23,7 +23,7 @@ const featuredProject = projects[0];
 		/>
 		<style>
 			.wrapper {
-				margin-bottom: 2em;
+				background: #3399ff;
 			}
 
 
@@ -250,7 +250,19 @@ const featuredProject = projects[0];
 				margin-top: 2em;
 			}
 
-		
+			.button {
+				color: black;
+			}
+
+			.astroHref {
+				color: black;
+				text-decoration:underline;
+			}
+
+			.aboutHref {
+				color: black;
+				text-decoration: underline;
+			}
 
 		</style>
 	</head>
@@ -279,6 +291,7 @@ const featuredProject = projects[0];
 			</div>
 		</header>
 		<main class="wrapper">
+			
 			<div class="grid animate__backInUp">
 				<div class="section">
 					<h3 class="sectionTitle">Projets divers</h3>
@@ -292,12 +305,12 @@ const featuredProject = projects[0];
 					<h3 class="sectionTitle">Informations supplémentaires</h3>
 					<p class="bio">
 						<span>Bien le bonjour !</span>Ce portfolio a été crée à l'aide d'
-						<a href="https://github.com/withastro/astro" target="_blank" rel="nofollow"> Astro</a>,
+						<a class="astroHref" href="https://github.com/withastro/astro" target="_blank" rel="nofollow"> Astro</a>,
 						histoire de faire d'une pierre deux coups, concevoir mon portfolio et tester le framework.
 					</p>
 
 					<p>
-						<a href="/about">En apprendre plus sur moi</a>
+						<a class="aboutHref" href="/about">En apprendre plus sur moi</a>
 					</p>
 
 				</div>
