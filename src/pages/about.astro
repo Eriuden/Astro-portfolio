@@ -9,6 +9,16 @@ import imageProfil from "../img/1636586359212.jpg"
 	<head>
 		<MainHead title="A propos | Antoine Carrette" description="A propos de moi" />
 		<style>
+
+			@keyframes slideFromBottom {
+				from {
+					transform: translateY(+500px);
+				}
+
+				to {
+					transform: translateY(0px);
+				}
+			}
 			.heroImg {
 				max-width:20%;
 				max-height:20%;
@@ -48,12 +58,21 @@ import imageProfil from "../img/1636586359212.jpg"
 			.quiSuisJeStrongP {
 				text-align: center;
 			}
+
+			.wrapperPage {
+				background-image:url("../img/side-wave_background4.jpg") ;
+				background-size: cover;
+				animation-name: slideFromBottom;
+				animation-duration: 1.5s;
+			}
+			
+			
 			
 		</style>
 	</head>
 	<body>
 		<Nav />
-		<div class="wrapper">
+		<div class="wrapperPage">
 			<h1 class="aPropos">A propos de moi</h1>
 			<div class="heroImg">
 				<img
@@ -132,6 +151,6 @@ import imageProfil from "../img/1636586359212.jpg"
         		</article>
 			</div>
 		</div>
-		<Footer />
+		
 	</body>
 </html>

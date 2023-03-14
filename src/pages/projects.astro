@@ -25,10 +25,15 @@ const projects = (await Astro.glob('./project/**/*.md'))
 				
 			}
 			.title {
-				margin-top: 2rem;
+				
 				margin-bottom: 2rem;
 				color:black;
 				text-align: center;
+			}
+
+			.wrapper {
+				background-image:url("../img/side-wave_background_projects.jpg") ;
+				background-size: cover;
 			}
 		</style>
 	</head>
@@ -40,6 +45,6 @@ const projects = (await Astro.glob('./project/**/*.md'))
 				{projects.map((project) => <PortfolioPreview project={project} />)}
 			</div>
 		</div>
-		<Footer />
+		
 	</body>
 </html>
