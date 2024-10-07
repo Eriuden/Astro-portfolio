@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/project.astro
-title: Carte Age
+title: Carte âge
 client: Self
 publishDate: 2022-05-03 00:00:00
-img: https://cdn.cloudflare.steamstatic.com/steam/apps/1881420/header.jpg?t=1664498455
+img: https://vgdd-en.cf-vanguard.com/wordpress/wp-content/themes/vgdd_en_v1.2/assets/images/common/index/img_system_01.jpg
 description: |
   Un site d'e commerce cette fois en React Node sur les TCG.
 tags:
