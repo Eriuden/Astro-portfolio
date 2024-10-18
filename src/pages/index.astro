@@ -2,7 +2,6 @@
 // Component Imports
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import 'animate.css';
 
@@ -32,7 +31,21 @@ const featuredProject = projects[0];
 				overflow: hidden;
 			}
 
+			@media (max-width: 500px) {
+				.hero {
+					height: 80vw;
+					display: flex;
+				}
+			}
+
 			@media (min-width: 750px) {
+				.hero {
+					height: 60vw;
+					display: flex;
+				}
+			}
+
+			@media (min-width: 900px) {
 				.hero {
 					height: 45vw;
 					display: flex;
@@ -81,9 +94,28 @@ const featuredProject = projects[0];
 
 			@media (min-width: 750px) {
 				.overlay {
-					padding-left: 4rem;
+					padding-left: 4rem;	
 				}
 			}
+
+			@media (max-width: 750px) {
+				.overlay {
+					margin-top:5%;	
+				}
+				.role {
+					padding-bottom: 0.5rem;
+				}
+			}
+
+			@media (max-width: 900px) {
+				.overlay {
+					margin-top:5%;		
+				}
+				.role {
+					padding-bottom: 0.5rem;
+				}
+			}
+			
 
 			.title {
 				font-weight: 900;
@@ -221,9 +253,9 @@ const featuredProject = projects[0];
 				
 			}
 
-			@media screen and (max-width:400px) {
+			@media screen and (max-width:600px) {
 				.hero{
-					max-height: 130%;
+					max-height: 180%;
 					font-size: 80%;
 				}
 			}
