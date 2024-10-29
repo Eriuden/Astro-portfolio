@@ -10,6 +10,13 @@ tags:
   - Symfony
   - dev
   - MERN
+  - React
+  - Node
+  - SQL
+  - Full-stack
+  - MongoDB
+  - E-commerce
+  - CRUD
 ---
 
 Le site que j'ai crée pour l'examen de ma première formation, je sortais alors des deux dernières semaines où nous avions vu Symfony, et là où j'ai détesté PHP, son framework fut, en revanche, une superbe découverte, si je n'ai plus codé depuis un certain temps avec, je n'hésiterais pas à me replonger dedans pour un emploi où un projet auquel Symfony convient mieux que tout autre.

@@ -12,6 +12,10 @@ tags:
   - React
   - Node
   - SQL
+  - MongoDB
+  - E-commerce
+  - Full-stack
+  - CRUD
 ---
 
 Le premier site que j'ai fait en React/Node, mais non pas avec MongoDB pour la BDD, mais mySQL, stack que je n'ai plus réutilisé, MERN fonctionnant avec une bien meilleure synergie.

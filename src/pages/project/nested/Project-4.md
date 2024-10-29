@@ -12,6 +12,8 @@ tags:
   - Express
   - React
   - Node
+  - Social network
+  - CRUD
 
   
 ---

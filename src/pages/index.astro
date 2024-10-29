@@ -291,6 +291,13 @@ const featuredProject = projects[0];
 			.aboutHref {
 				color: black;
 				text-decoration: underline;
+				margin-left: 5%;
+				margin-bottom: 5%;
+			}
+
+			.infoSupp {
+				margin-top:2%;
+				font-weight:bold;
 			}
 
 		</style>
@@ -330,7 +337,7 @@ const featuredProject = projects[0];
 			
 			<div class="grid animate__backInUp">
 				<div class="section animate__backInUp">
-					<h3 class="sectionTitle">Projets divers</h3>
+					<h2 class="sectionTitle">Projets divers</h2>
 					<PortfolioPreview project={featuredProject} />
 					<div class="buttonContainer">
 						<a href="/projects/" class="button">Voir tout les projets</a>
@@ -345,9 +352,20 @@ const featuredProject = projects[0];
 						.
 					</p>
 
-					<p>
+					<p class="infoSupp"> <strong>Vous trouverez ici : </strong></p>
+
+					<p class="infoSupp">- Un résumé de pourquoi je suis devenu développeur</p>
+					
 						<a class="aboutHref" href="/about">En apprendre plus sur moi</a>
-					</p>
+
+					<p class="infoSupp">- La liste de mes outils de création de site</p>
+					
+						<a class="aboutHref" href="/techs">Mes outils</a>		
+
+					<p class="infoSupp">- Une liste de mes créations</p>
+					
+						<a class="aboutHref" href="/projects">Mes projets</a>
+					
 
 				</div>
 			</div>
