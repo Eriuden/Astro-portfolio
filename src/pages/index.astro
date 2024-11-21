@@ -33,7 +33,7 @@ const featuredProject = projects[0];
 
 			@media (max-width: 500px) {
 				.hero {
-					height: 80vw;
+					height: 100vw;
 					display: flex;
 				}
 			}
@@ -45,9 +45,16 @@ const featuredProject = projects[0];
 				}
 			}
 
+			@media (max-width: 750px) {
+				.hero {
+					height: 60vw;
+					display: flex;
+				}
+			}
+
 			@media (min-width: 900px) {
 				.hero {
-					height: 45vw;
+					height: 55vw;
 					display: flex;
 				}
 			}
@@ -329,6 +336,9 @@ const featuredProject = projects[0];
 				<div class="roles animate__backInRight">
 					<span class="role"> tel : 06 24 66 24 51 <span class="invert"> 06 24 66 24 51</span></span>
 					<span class="role"> mail : erxtech.msg@gmail.com <span class="invert"> erxtech.msg@gmail.com</span></span>
+				</div>
+				<div class="roles animate__backInRight">
+					<span class="role">Tarifs moyen/jour : 200€ <span class="invert">Hébergement offert</span></span>
 				</div>
 				<p class="desc text-xs align-middle stroke: #f8fafc;"></p>
 			</div>
