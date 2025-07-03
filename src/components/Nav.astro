@@ -12,6 +12,8 @@ import Github from '../img/GitHub-logo.png';
 		<a class="link" href="/techs/"> Mes langages/techs</a>
 		<a class="link" href="/about/"> A propos de moi</a>
 	
+		
+	
 	
 	<div class="socials">
 		
@@ -37,6 +39,7 @@ import Github from '../img/GitHub-logo.png';
 	
 	nav {
 		display: flex;
+		flex-direction: row;
 		gap: 1rem;
 		align-items: center;
 		padding: 1rem;
@@ -44,6 +47,7 @@ import Github from '../img/GitHub-logo.png';
 		position: absolute sticky; top: 0;
 		font-family: serif;
 		font-size: 110%;
+
 	}
 
 	.link {
@@ -87,8 +91,7 @@ import Github from '../img/GitHub-logo.png';
 
 	@media screen and (max-width : 500px) {
 		.socials {
-			display: flex;
-			flex-direction: column;
+			
 		}
 		.link{
 			font-size: 70%;
@@ -96,12 +99,14 @@ import Github from '../img/GitHub-logo.png';
 			padding-bottom: 0.10%;
 		}
 		nav{
+			display: flex;
+			flex-direction: row;
 			padding: 1px;
 		}
 	}
 
 
-	@media screen and (max-width : 350px) {
+	@media screen and (max-width : 450px) {
 
 		nav {
 			display: flex;
@@ -111,7 +116,6 @@ import Github from '../img/GitHub-logo.png';
 		.links {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
 		}
 
 		.socials {
@@ -122,11 +126,8 @@ import Github from '../img/GitHub-logo.png';
 		}
 		.link{
 			font-size: 50%;
-			
 		}
 	}
-
-
 
 	.social {
 		display: block;
