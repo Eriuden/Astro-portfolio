@@ -12,11 +12,12 @@ import ImagesTailwind from "../Img/tailwindcss.png";
 
 <html lang="en">
 	<head>
-		<MainHead title="A propos | Antoine Carrette" description="Les langages que j'utilise" />
+		<MainHead title="Stack technique | Antoine Carrette" description="Les langages que j'utilise" />
 		<style>
 			
 			.aPropos {
-				text-align: center
+				text-align: center;
+        font-style: italic;
 			}
 
 			.heroImg img {
@@ -149,6 +150,17 @@ import ImagesTailwind from "../Img/tailwindcss.png";
               font-family: serif;
 			      }
 
+            @media screen and (max-width: 450px) {
+              .Images {
+                max-width: 40%;
+                max-height: 40%;
+                margin-bottom: 1.5rem;
+            }
+              .techsP {
+                text-align: justify;
+              }
+            }
+
             
 
 		</style>
@@ -165,7 +177,7 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                   <p class="techsP">
                     C'est le premier vrai langage auquel je me suis frotté, c'est en
                     partie pour ça que j'ai vite décidé de me spécialiser dans celui ci au
-                    lieu de me disperser et me perdre. Je l'utilise encore en brut de
+                    lieu de me disperser et me perdre. <br/> Je l'utilise encore en brut de
                     temps en temps pour développer des petits jeux et programmes.
                   </p>
                 </div>
@@ -183,7 +195,7 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                         graphisme, etc...)
                     </strong>
                   </p>
-
+                  <br/>
                   <p class="techsP">
                     La librairie (et non framework contrairement à la croyance populaire)
                     de JS sur laquelle j'ai décide de me spécialiser, pour plusieurs
@@ -192,7 +204,7 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                     très utilisée en entreprise, cherchant un CDI, elle me semblait un
                     choix judicieux.
                   </p>
-          
+                  <br/>
                   <p class="techsP">
                     Aussi, elle est pensée pour fonctionner en symbiose avec Node, ce que
                     j'ai pu tester et confirmer, elle serait aussi utilisée en combinaison
@@ -225,7 +237,7 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                         fonctions avancées du site, etc...)
                       </strong>
                   </p>
-                  
+                  <br/>
                   <p class="techsP">
                     Le fameux environnement back-end de Javascript, où quand l'un des plus
                     célèbres langage front-end décide de se passer de sa combinaison
@@ -234,8 +246,8 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                     l'installation de modules Node lors de la création d'un dossier React
                     nous le hurle.
                   </p>
-          
-                  <p class="techsP">
+                  <br/>
+                  <p class="techsP axios">
                     Et en effet, avec l'usage d'Axios, j'ai pu tester l'ensemble et voir
                     qu'un site complet est réalisable de cette manière.
                   </p>
@@ -278,6 +290,7 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                     langage, et pourtant, l'utilisation de Symfony fut une révélation pour
                     moi.
                   </p>
+                  <br/>
           
                   <p class="techsP">
                     Avec une bonne utilisation du terminal, Il est aisé de créer des
