@@ -71,13 +71,15 @@ import ImagesTailwind from "../Img/tailwindcss.png";
             }
 
             .Tailwind {
-                margin-top: 5rem;
+                margin-top: 1rem;
                 font-family: "King";
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                animation-name: slideFromLeft;
-                animation-duration: 3s;
+                animation: revealY;
+				        animation-duration:2s;
+				        animation-timeline: view();
+				        animation-range-start: cover 0.2%;
             }
 
             .Node {
@@ -86,8 +88,10 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                animation-name: slideFromRight;
-                animation-duration: 4s;
+                animation: revealX;
+				        animation-duration:2s;
+				        animation-timeline: scroll();
+				        animation-range-start: cover 4%;
             }
 
             .Symfony {
@@ -97,8 +101,11 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                 flex-direction: column;
                 align-items: center;
                 margin-bottom: 3rem;
-                animation-name: slideFromLeft;
-                animation-duration: 5s;
+                animation: revealY;
+				        animation-duration:2s;
+				        animation-timeline: scroll();
+				        animation-range-start: cover 4%;
+                animation-range-end: cover 10%;
             }
 
             .MySQL {
@@ -107,8 +114,11 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                animation-name: slideFromRight;
-                animation-duration: 6s;
+                animation: revealY;
+				        animation-duration:2s;
+				        animation-timeline: scroll();
+				        animation-range-start: cover 1%;
+                animation-range-end: cover 10%;
             }
 
             .MongoDB {
@@ -117,8 +127,10 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                animation-name: slideFromLeft;
-                animation-duration: 7s;
+                animation: revealY;
+				        animation-duration:2s;
+				        animation-timeline: view();
+				        animation-range-start: cover 1%;
             }
 
             .photo-profil {
@@ -160,6 +172,28 @@ import ImagesTailwind from "../Img/tailwindcss.png";
                 text-align: justify;
               }
             }
+
+            @keyframes revealY {
+              0% {
+                transform: translateY(10%);
+                    opacity: 20%;
+              }
+              100% {
+                transform: translateY(0);
+                opacity: 1;
+              }
+			      }
+
+            @keyframes revealX {
+              10% {
+                transform: translateX(10%);
+                    opacity: 0;
+              }
+              100% {
+                transform: translateX(0);
+                opacity: 1;
+              }
+			      }
 
             
 

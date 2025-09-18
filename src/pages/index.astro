@@ -142,10 +142,24 @@ const featuredProject = projects[0];
 				}
 			}
 
+			@keyframes reveal {
+				0% {
+					transform: translateX(100%);
+      				opacity: 0;
+				}
+				100% {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+
 			.grid {
 				display: grid;
 				grid-gap: 2rem;
-				animation-duration: 1.2s;
+				animation: reveal;
+				animation-duration:2s;
+				animation-timeline: scroll();
+				animation-range-start: cover 5%;
 			}
 
 			@media (min-width: 1200px) {
@@ -357,8 +371,8 @@ const featuredProject = projects[0];
 		</header>
 		<main class="wrapper">
 			
-			<div class="grid animate__backInUp">
-				<div class="section animate__backInUp">
+			<div class="grid">
+				<div class="section">
 					<h2 class="sectionTitle">Projets divers</h2>
 					<PortfolioPreview project={featuredProject} />
 					<div class="buttonContainer">
@@ -366,7 +380,7 @@ const featuredProject = projects[0];
 					</div>
 				</div>
 				
-				<div class="section animate__backInUp">
+				<div class="section">
 					<h3 class="sectionTitle">Informations supplémentaires</h3>
 					<p class="bio">
 						<span>Bien le bonjour !</span>Ce portfolio a été crée à l'aide d'
